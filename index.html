@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            background-color: #8B008B;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+        }
+
+        header {
+            background: rgba(139, 0, 139, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            display: flex; /* Adicione flexbox para alinhar o nome e o e-mail */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Empilhe elementos verticalmente */
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0; /* Remova a margem superior para o nome */
+        }
+
+        .contact-info {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centralize os cards horizontalmente */
+            align-items: center; /* Centralize os cards verticalmente */
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente branco para efeito de vidraçaria */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            /* Adicione efeito de hover */
+            &:hover {
+                background: rgba(255, 255, 255, 0.9); /* Fundo semitransparente branco mais claro no hover */
+                color: black;
+            }
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+        }
+
+    .paragrafo-mestrado-2 {
+        font-size: 18px;
+        margin-left: 15%;
+        margin-right: 20%;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .paragrafo-mestrado-2 h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+        .paragrafo-mestrado {
+            font-size: 18px;
+            margin-left: 15%;
+            margin-right: 20%;
+            margin-bottom: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .paragrafo-mestrado h2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: black;
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filipe Mesel L. C. Cardoso</h1>
+    </header>
+    <main>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 20%;">CRUD com Django para Estudantes de uma escola</h2>
+            <P>
+                Este projeto é uma aplicação web fullstack baseada em Django que permite a adição, exclusão e atualização de 
+                informações de estudantes, com paginação.
+                O projeto faz uso de:
+                <ul>
+                    <li>Django</li>
+                    <li>Páginação Django</li>
+                    <li>Banco de dados SQLite</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/basic_student_information_app_with_Django">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2 style="margin-left: 43%;">Projeto Sistema para Nutricionistas</h2>
+            <P>
+                Este projeto é uma aplicação web fullstack baseada em Django que permite a adição, exclusão e atualização de 
+                informações de clientes de um consultório de nutrição. No projeto, é possível criar logins de acesso a médicos e seus clientes.
+                O projeto faz uso de:
+                <ul>
+                    <li>Django</li>
+                    <li>Autenticação com Django [Login/Logout e Password Reset]</li>
+                    <li>Banco de dados SQLite</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/Plataforma_Django_Calorie_Tracker">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 35%">Plataforma de Dispositivos IOT</h2>
+            <P>
+                O projeto correpsonde a uma plataforma IoT completa onde clientes, com níveis diferentes de acesso ao sistema, podem realizar
+                autenticação, criar empreendimentos com vários ambientes e configurar diversos devices diferentes para estes ambientes.
+                Atualmente existem 5 categorias diferentes de devices que permitem formas diferentes de visualizar dados.
+            </P>
+            <p>
+                Por exemplo, o DEMETER-WiFi permite visualizar a geolocalização do dispositivo num mapa interativo. Já que foi pensado a um device IOT
+                que monitora gado no pasto. Já o Hestia, controlador IoT de irrigação, permite acionar relés e sistemas de irrigação automáticos.
+                O projeto faz uso de:
+                <ul>
+                    <li>Python PAHO-MQTT (MQTT Client)</li>
+                    <li>Python Flask (Controle de Rotas e autenticação de usuários)</li>
+                    <li>Banco de dados MySQL</li>
+                    <li>React (Elaboração do front-end)</li>
+                    <li>React-bootstrap (Elaboração de Layouts)</li>
+                </ul>
+            </p>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/plataforma_iot">aqui!</a>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2  style="margin-left: 70%;">Projeto TODO List</h2>
+            <P>
+                Este é um projeto Django simples de Lista de Tarefas, onde você pode adicionar, 
+                listar e gerenciar tarefas. Ele consiste em duas páginas da web: "list_todos.html" e "register_todos.html".
+                O projeto faz uso de:
+                <ul>
+                    <li>Django</li>
+                    <li>CRUD básico com Django</li>
+                    <li>Banco de dados SQLite</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul> 
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/Python_Django_Todo_list">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 20%;">Sistema bancário com Python</h2>
+            <P>
+                Movido pelos estudos sobre a linguagem Python e POO do curso "Formação Python" da DIO, decidi 
+                tentar criar um software de um banco capaz de criar usuários, criar contas para os usuários, 
+                permitir a realização de transações e calcular o risco de crédito dos usuários.
+                O projeto faz uso de:
+                <ul>
+                    <li>Python PyQT (Interface gráfica PC)</li>
+                    <li>Python SQLAlchemy (Acesso a banco de dados MySQL)</li>
+                    <li>Python PyTest (Realização de testes de software)</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/Sistema_bancario_python">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2  style="margin-left: 65%;">IFood Dev Week 2023</h2>
+            <P>
+                Este projeto consistiu em uma imersão semanal em ciências de dados com Python, abrangendo conhecimentos desde lógica de 
+                programação até a aplicação de criar um analisador de feedbacks usando a API do Chat GPT, no estilo de calcular um Net 
+                Promoter Score (NPS).
+                O projeto faz uso de:
+                <ul>
+                    <li>Python para ETL (Extract, Transform and Load Data)</li>
+                    <li>Conceitos de uso de Numpy e Pandas (Bibliotecas Python)</li>
+                    <li>Uso da API do Chat GPT para gerar insights sobre dados previamente adquiridos</li>
+                    <li>Google Colab</li>
+                </ul> 
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/DIO_IFood_Dev_Week_2023">aqui!</a>
+            </P>
+        </div>
+        <!-- <div class="card fullstack">
+            <h2>Fullstack Projects</h2>
+        </div>
+        <div class="card embedded">
+            <h2>C++ Embedded Systems Projects</h2>
+        </div>
+        <div class="card mestrado">
+            <h2>Sobre Meu Mestrado</h2>
+        </div>
+        <div class="card python">
+            <h2>Python Projects</h2>
+        </div> -->
+    </main>
+</body>
+</html>
